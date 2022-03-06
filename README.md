@@ -1,8 +1,4 @@
-<<<<<<< HEAD
 <h1 align="center">F.R.I.E.N.D.S</h1>
-=======
-<h1 align="center">F.R.I.E.N.D.S API built using Django Rest Framework</h1>
->>>>>>> temp_branch
 
 
 Currently we have following endpoints:
@@ -36,11 +32,9 @@ Currently we have following endpoints:
       https://friends-quotes-alpha-api.herokuapp.com/friends/random/season/S01
       ```
       
-<<<<<<< HEAD
+      
 Visit **https://friends-api-quotes.herokuapp.com**  to explore all the APIs. 
-=======
-Visit **https://friends-quotes-alpha-api.herokuapp.com/docs**  to explore all the APIs. 
->>>>>>> temp_branch
+
 It contains more than 2000+ quotes
 Currently we have Quotes for Season-01 only 
 We will be adding more quotes in future
