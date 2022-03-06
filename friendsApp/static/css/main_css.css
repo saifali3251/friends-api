@@ -1,0 +1,22 @@
+.body-class {
+    /* color: blue; */
+    /* background-color: antiquewhite; */
+    background-color: azure;
+}
+
+.endpoint-tag {
+    font-size: xx-large;
+    font-weight: 700;
+}
+
+.endpoint-class p {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: larger !important;
+    font-weight: 500;
+}
+
+.endpoint-class a {
+    font-size: medium;
+    color: blue;
+    font-family: sans-serif;
+}

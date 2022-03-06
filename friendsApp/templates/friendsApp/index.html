@@ -1,0 +1,211 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!-- Google Font awesome -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <link rel="stylesheet" href="{% static 'css/main_css.css' %}">
+
+    <title>friends api</title>
+</head>
+
+
+<body class="body-class">
+    <header class="main-header">
+        <nav class="transparent">
+            <div class="container">
+                <div class="nav-wrapper">
+                    <a href="#" class="brand-logo black-text">Friends API</a>
+                    <ul class="right hide-on-med-and-down">
+                        <li>
+                            <a class="grey-text" target="blank" href="https://friends-quotes-alpha-api.herokuapp.com/docs/">
+                                API Dashboard
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+    <div class="container">
+        <div class="row">
+            <br>
+            <br>
+            <br>
+            <div class="col s12 m8 offset-m2">
+                <div>
+                    <!-- <h2>FRIENDS API</h2> -->
+                    <div class="carsef">
+                        <!-- <img class="responsive-img" src="friends_logo.jpg" alt="friends-logo"> -->
+                        <img class="responsive-img" src="{% static 'images/friends_logo2.jpg' %}" alt="friends-logo">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col s12 m8 offset-m2 endpoint-class">
+                <div class="endpoint-tag">
+                    About Us
+                </div>
+                <div>
+                    <p>This is a lightweight public API made for entertainment purpose. The API is still in development stage so more quotes will be added in future. To report a bug or suggest an enhancement please <a class="black-text" target="blank" href="https://www.linkedin.com/in/saif-ali-532388169/"> contact us</a>                        </p>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col s12 m8 offset-m2 endpoint-class">
+                <ul>
+                    <li>
+                        <div class="endpoint-tag">
+                            Endpoints
+                        </div>
+                    </li>
+                    <li class="e-c">
+                        <p>Get random quotes</p>
+                        <div>
+                            <a id="api-link" target="blank" href="https://friends-quotes-alpha-api.herokuapp.com/friends/random/?format=json
+                        ">https://friends-quotes-alpha-api.herokuapp.com/friends/random/
+                        </a>
+                            <!-- <button onclick="myFunction()">Copy text</button> -->
+                        </div>
+                        <br>
+                    </li>
+                    <li>
+                        <p>Get random quotes by character</p>
+                        <div>
+                            <a target="blank" href="https://friends-quotes-alpha-api.herokuapp.com/friends/random/character/Joey?format=json
+                        ">https://friends-quotes-alpha-api.herokuapp.com/friends/random/character/Joey</a>
+                        </div>
+                        <br>
+                    </li>
+                    <li>
+                        <p>Get random quotes by level</p>
+                        <div>
+                            <a target="blank" href="https://friends-quotes-alpha-api.herokuapp.com/friends/random/level/Easy?format=json
+                        ">https://friends-quotes-alpha-api.herokuapp.com/friends/random/level/Easy
+                    </a>
+                        </div>
+                        <br>
+                    </li>
+                    <li>
+                        <p>Get random quotes by Season</p>
+                        <div>
+                            <a target="blank" href="https://friends-quotes-alpha-api.herokuapp.com/friends/random/season/S01?format=json
+                        ">https://friends-quotes-alpha-api.herokuapp.com/friends/random/season/S01
+                  </a>
+                        </div>
+                        <br>
+                    </li>
+                    <li>
+                        <p>Get random quotes by Character and Season</p>
+                        <div>
+                            <a target="blank" href="https://friends-quotes-alpha-api.herokuapp.com/friends/random/season/character/S01/Joey?format=json
+                ">https://friends-quotes-alpha-api.herokuapp.com/friends/random/season/character/S01/Joey
+                </a>
+                        </div>
+                        <br>
+                    </li>
+                    <li>
+                        <p>Get list of all Characters by Season</p>
+                        <div>
+                            <a target="blank" href="https://friends-quotes-alpha-api.herokuapp.com/friends/characters/S01?format=json
+              ">https://friends-quotes-alpha-api.herokuapp.com/friends/characters/S01
+              </a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col s12 m8 offset-m2 endpoint-class">
+                <div class="endpoint-tag">
+                    Allowed HTTP methods
+                </div>
+                <div>
+                    <p>Currently the API only supports <strong>GET</strong> requests.</p>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col s12 m8 offset-m2 endpoint-class">
+                <div class="endpoint-tag">
+                    Status Code
+                </div>
+                <div>
+                    <p>The API will respond with one of the following status codes</p>
+                    <table class="striped">
+                        <thead>
+                            <tr>
+                                <th>Code</th>
+                                <th>Description</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th>200</th>
+                                <th>Success</th>
+                            </tr>
+                            <tr>
+                                <th>400</th>
+                                <th>Bad Request</th>
+                            </tr>
+                            <tr>
+                                <th>401</th>
+                                <th>Unauthorized</th>
+                            </tr>
+                            <tr>
+                                <th>403</th>
+                                <th>Forbidden</th>
+                            </tr>
+                            <tr>
+                                <th>404</th>
+                                <th>Not Found</th>
+                            </tr>
+                            <tr>
+                                <th>500</th>
+                                <th>Internal Server Error</th>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col s12 m8 offset-m2 endpoint-class">
+                <div class="endpoint-tag">
+                    Rate Limit
+                </div>
+                <div>
+                    <p>The current version have rate limit of 10 calls per hour with maximum of 50 calls per day</p>
+                </div>
+            </div>
+        </div>
+        <br>
+    </div>
+
+
+
+    <!--Import jQuery before materialize.js-->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script>
+        $(document).ready(function() {
+        });
+    </script>
+</body>
+
+</html>
