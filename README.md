@@ -35,8 +35,8 @@ Currently we have following endpoints:
       
 Visit **https://friends-api-quotes.herokuapp.com**  to explore all the APIs. 
 
-It contains more than 2000+ quotes
-Currently we have Quotes for Season-01 only 
+It contains more than 500+ quotes
+Currently we have Quotes for Season-01,02 only 
 We will be adding more quotes in future
 
 
